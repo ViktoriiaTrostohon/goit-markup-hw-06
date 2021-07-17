@@ -79,6 +79,7 @@ body {
   transform: scale(1) translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -106,10 +107,23 @@ body {
 
 .close-button:hover,
 .close-button:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
-  transition: fill var(--duration) var(--speed),
-    background-color var(--duration) var(--speed);
+  fill: var(--accent-color);
+  transition: fill var(--duration) var(--speed);
+}
+
+/* Modal Form */
+
+.modal-form-field {
+  position: relative;
+}
+
+.modal-form-feedback {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
 }
 
 /* Header: logo */
