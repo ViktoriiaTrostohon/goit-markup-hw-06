@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --main-icon-color: #afb1b8;
   --modal-button-hover: #188ce8;
+  --footer-color: #2f303a;
   --duration: 250ms;
   --speed: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -206,7 +207,9 @@ body {
 }
 
 .checkbox-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
@@ -214,7 +217,7 @@ body {
 }
 
 .checkbox-icon {
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 8.38px;
   width: 16px;
   height: 15px;
@@ -643,8 +646,7 @@ body {
 /* Footer */
 
 .footer {
-  background-color: #2f303a;
-  padding: 60px 0px;
+  background-color: var(--footer-color);
 }
 
 .footer .logo-name-two {
@@ -658,6 +660,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 70px;
+  padding: 60px 0px;
 }
 
 .logo.page-bottom {
@@ -699,6 +702,9 @@ body {
 .join-us {
   display: block;
   height: 80px;
+  margin-right: 93px;
+  padding-top: 75px;
+  padding-bottom: 97px;
 }
 
 .footer-heading {
@@ -719,6 +725,78 @@ body {
 .join-us .network-link:hover,
 .join-us .network-link:focus {
   background-color: var(--accent-color);
+}
+
+/* Footer Form */
+
+.footer-form {
+  padding-top: 72px;
+}
+
+.contact-form-feedback {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-form {
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+
+.contact-form-label {
+  display: inline-block;
+}
+
+.contact-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-color);
+  color: var(--primary-white-color);
+}
+
+.contact-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px 28px 10px 29px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.footer-icon {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
 }
 
 /* Examples of our works:buttons */
