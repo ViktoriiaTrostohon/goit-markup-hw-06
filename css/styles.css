@@ -771,6 +771,7 @@ body {
 }
 
 .contact-form-field {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -780,7 +781,7 @@ body {
   display: flex;
   width: 200px;
   height: 50px;
-  padding-top: 10px 28px 10px 29px;
+  padding: 10px 62px 10px 29px;
   align-items: center;
   justify-content: center;
   font-weight: 700;
@@ -795,8 +796,11 @@ body {
 }
 
 .footer-icon {
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  margin-right: 13px;
   margin-left: 10px;
 }
 
